@@ -13,10 +13,10 @@ class TaskManager: NSObject {
     
     var tasks = [task]()
     
-    func addTask(name: String, desc: String, time: Date){
+    func adding(name: String, desc: String, time: Date){
         tasks.append(task(name: name, desc: desc, time: time ))
     }
-}
+} 
 
 #Добавление задач в массив, которые будут включать имя и описание задачи, время добавления задачи, 
 #чтобы упростить работу с введенными данными позже при работе с tableview.
@@ -33,12 +33,9 @@ func removing (at index: Int)  {
   tasks.remove(at: index) удаления значения с соотвествующим значением index
   }
   
-func load_data(){
-  
-  }
 
 func save_data(){
-  
+  #сохранение данных
   }
 func pushAddAction(_ sender: Any) { #
    adding(Name:"New Item")
